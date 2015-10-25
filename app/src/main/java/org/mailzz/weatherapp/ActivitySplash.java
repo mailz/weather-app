@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 
 /**
- * Created by ubick on 25.10.2015.
+ * Created by Dmitriy Trandin on 25.10.2015.
  */
 public class ActivitySplash extends AppCompatActivity {
 
@@ -20,11 +20,12 @@ public class ActivitySplash extends AppCompatActivity {
         //start app
 
         new Handler().postDelayed(new Runnable() {
+            @Override
             public void run() {
                 Intent intent = new Intent(ActivitySplash.this, ActivityMain.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-                finish();
+                ActivitySplash.this.startActivity(intent);
+                ActivitySplash.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
 
