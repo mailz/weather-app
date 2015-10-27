@@ -28,7 +28,7 @@ public class ApiClient {
     public ApiClient() {
     }
 
-    public Observable<String> getData(final Request request){
+    public Observable<String> execute(final Request request){
         return Observable.create(new Observable.OnSubscribe<String>() {
             @Override
             public void call(Subscriber<? super String> subscriber) {
