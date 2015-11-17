@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Weather App</string>
+    <string name="gender_choise">Выбор пола</string>
+    <string name="check_gender_question">Юбки или брюки?</string>
+    <string name="man_title">Мужчина</string>
+    <string name="цщьфт_ешеду">Женщина</string>
 </resources>
